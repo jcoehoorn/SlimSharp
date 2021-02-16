@@ -1,3 +1,6 @@
+//====================================================================================
+// SlimSharp Pre-roll. Use this section at the top of your SlimSharp source file
+//====================================================================================
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,17 +18,26 @@ using static SSUtil;
 
 System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.ConsoleTraceListener());
 
-//============================================================================
+//===================================================================================
+// End Pre-Roll.
+
+
+//===================================================================================
 // Begin SlimSharp code here
-//============================================================================
+//===================================================================================
 
 
 
 
 
-//=============================================================================
-// Stop Slimsharp code here
-//=============================================================================
+//===================================================================================
+// Stop SlimSharp code here
+//===================================================================================
+
+
+//===================================================================================
+// SlimSharp Post-Roll. Include this code at the bottom of your SlimSharp source file
+//
 public static class SSUtil
 {
     // TODO: all overloads
@@ -35,13 +47,13 @@ public static class SSUtil
     public static string R() { return Console.ReadLine(); }
     public static string R(S prompt) { p(prompt); return R(); }
 
-    public static I RI() { return Int32.Parse(R()); }
-    public static D RD() { return Double.Parse(R()); }
-    public static T RT() { return DateTime.Parse(R()); }
+    public static I RI() { return IP(R()); }
+    public static D RD() { return DP(R()); }
+    public static T RT() { return TP(R()); }
 
-    public static I RI(S prompt) { return Int32.Parse(R(prompt)); }
-    public static D RD(S prompt) { return Double.Parse(R(prompt)); }
-    public static T RT(S prompt) { return DateTime.Parse(R(prompt)); }
+    public static I RI(S prompt) { return IP(R(prompt)); }
+    public static D RD(S prompt) { return DP(R(prompt)); }
+    public static T RT(S prompt) { return TP(R(prompt)); }
 
     public static I RI(S prompt, int MaxTries) { while (MaxTries > 0) { try { return RI(prompt); } catch { MaxTries--; } } throw new Exception("Out of tries"); }
     public static D RD(S prompt, int MaxTries) { while (MaxTries > 0) { try { return RD(prompt); } catch { MaxTries--; } } throw new Exception("Out of tries"); }
