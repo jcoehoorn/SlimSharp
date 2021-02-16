@@ -34,15 +34,15 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 * `System.String.l()` is an alias for `System.String.ToLower()`
 * `System.String.U()` is an alias for `System.String.ToUpper()`
 * `System.String.T()` is an alias for `System.String.Trim()`
-* `System.String.L` is an alias for `System.String.Length`
-* `System.Int32.P()` is an alias for `System.Int32.Parse()`
-* `System.Double.P()` is an alias for `System.Double.Parse()`
-* `System.DateTime.P()` is an alias for `System.DateTime.Parse()`. Note: `new T()` is often just as good or better, but this is useful if you have a string from elsewhere.
-* `System.Int32.Mx` is an alias for `System.Int32.MaxValue` (`I.Mx`)
-* `System.Int32.Mn` is an alias for `System.Int32.MinValue`
-* `System.Double.Mx` is an alias for `System.Double.MaxValue` (`D.Mx`)
-* `System.Double.Mn` is an alias for `System.Double.MinValue`
-* `L` as an alias for the `Length` property on arrays, and the `Count` property on `IList<T>`
+* `System.String.L()` replaces `System.String.Length`
+* `IP()` replaces `System.Int32.Parse()`
+* `DP()` replaces `System.Double.Parse()`
+* `TP()` replaces `System.DateTime.Parse()`. Note: `new T()` is often just as good or better, but this is useful if you have a string from elsewhere.
+* `IMx()` replaces `System.Int32.MaxValue` (`IMx()`)
+* `IMn()` replaces `System.Int32.MinValue`
+* `DMx()` replaces `System.Double.MaxValue` (`D.Mx`)
+* `DMn()` replaces `System.Double.MinValue`
+* `L()` as a replacement for the `Length` property on arrays, and the `Count` property on `IList<T>`
 
 # Under consideration
 
