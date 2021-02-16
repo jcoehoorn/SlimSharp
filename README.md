@@ -48,7 +48,7 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 
 The following changes are **under consideration**, but _not yet adopted_ and should not yet be used.
 
-* Using `e` (short for `each`) as an alias for the `foreach` keyword. The justification for this is it's often shorter to use a lamdba expression on a linq method, which causes you to mutate what would have been good code into... something else. Introducing `e` could flip this back the other way.
+* Using `e` (short for `each`) as an alias for the `foreach` keyword. The justification for this (aside from saving 6 bytes) is it's often shorter to use a lamdba expression on a linq method, which causes you to mutate what would have been good code into... something else. Introducing `e` could flip this back the other way.
 * Type inference on the `R()` family of functions (default to `System.String` if a definite type cannot be inferred). The reason to hold back here is we can't actually implement it right now without changing the compiler. Most other proposed changes could potentially be implemented by including a source file at the top of the program with some `using` directives, extension methods, and a few lines of warm-up code (Yes, extension properties and static extension methods are also not a thing. But maybe they should be). But C# methods must have a known return type, and so this requires lower-level changes to the compiler.
 * More shortcuts around arrays and Lists.
 * More shortcuts around DateTime math
