@@ -51,6 +51,7 @@ The following changes are **under consideration**, but _not yet adopted_ and sho
 * Using `e` (short for `each`) as an alias for the `foreach` keyword. 
 * Type inference on the `R()` family of functions (default to `System.String` if a definite type cannot be inferred)
 * More shortcuts around arrays and Lists.
+* More shortcuts around DateTime math
 
 More is possible. We could create single-character keywords as aliases for _**all**_ of the C# built in keywords, as well as more common types, methods, properties. However, this is held in balance against the language remaining simple and regonizable to C# (and other) developers.
 
