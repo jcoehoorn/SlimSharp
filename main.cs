@@ -43,8 +43,8 @@ public static class SSUtil
     // TODO: all overloads
     public static void P(S s) { System.Diagnostics.Trace.WriteLine(s); }
     public static void p(S s) { System.Diagnostics.Trace.Write(s); }
-	public static void P(O s) { System.Diagnostics.Trace.WriteLine(s); }
-	public static void p(O s) {System.Diagnostics.Trace.Write(s); }
+    public static void P(O s) { System.Diagnostics.Trace.WriteLine(s); }
+    public static void p(O s) {System.Diagnostics.Trace.Write(s); }
     
     public static string R() { return Console.ReadLine(); }
     public static string R(S prompt) { p(prompt); return R(); }
