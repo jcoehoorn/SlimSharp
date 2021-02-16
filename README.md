@@ -44,7 +44,7 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 * `System.Double.Mn` is an alias for `System.Double.MinValue`
 * `L` as an alias for the `Length` property on arrays, and the `Count` property on `IList<T>`
 
-#Under consideration
+# Under consideration
 
 The following changes are **under consideration**, but _not yet adopted_ and should not yet be used.
 
@@ -54,7 +54,7 @@ The following changes are **under consideration**, but _not yet adopted_ and sho
 
 More is possible. We could create single-character keywords as aliases for _**all**_ of the C# built in keywords, as well as more common types, methods, properties. However, this is held in balance against the language remaining simple and regonizable to C# (and other) developers.
 
-#Example
+# Example
 
 [This Stack Exchange Code Golf C# answer](https://codegolf.stackexchange.com/a/115112/58322) currently requires 127 bytes. The below SlimSharp code shortens it to 57 bytes:
 
