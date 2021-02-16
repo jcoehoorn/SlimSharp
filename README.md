@@ -4,7 +4,7 @@ SlimSharp is an esoteric programming language based on C# intended for use in Co
 
 The aim is **not** to compete with other esoteric programming languages intended for code golf, but rather to reduce some of the worst points of verbosity holding back C# as a language for simple code golf problems: `Console.WriteLine()`, `Console.ReadLine()`, `Replace()`, `ToLower()`, etc.
 
-SlimSharp starts with C# 9 (including [top-level statements](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/top-level-statements)) and includes the following additional features:
+SlimSharp starts with C# 9 (including [top-level statements](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/top-level-statements)) and includes the following features and changes:
 
 * Implicit using directives for (so far) System, System.Collections, System.Collections.Generics, System.Text.
 * The P() function (short for "Print") aliases to System.Diagnostics.Trace.WriteLine()
