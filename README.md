@@ -1,6 +1,6 @@
 # SlimSharp
 
-SlimSharp is an esoteric programming language based on C# intended for use in Code Golf scenarios. [Try it on .Net Fiddle.](https://dotnetfiddle.net/DBZI6Q)
+SlimSharp is an esoteric programming language based on C# intended for use in Code Golf scenarios. [Try it on .Net Fiddle.](https://dotnetfiddle.net/DkPEcu)
 
 The aim is **not** to compete with other esoteric programming languages intended for code golf, but rather to reduce some of the worst points of verbosity holding back C# as a language for simple code golf problems: `Console.WriteLine()`, `Console.ReadLine()`, `Replace()`, `ToLower()`, etc.
 
