@@ -7,27 +7,27 @@ The aim is **not** to compete with other esoteric programming languages intended
 SlimSharp starts with C# 9 (including [top-level statements](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/exploration/top-level-statements)) and includes the following features and changes:
 
 * Implicit using directives for (so far) System, System.Collections, System.Collections.Generics, System.Text, System.Linq.
-* The P() function (short for "Print") aliases to System.Diagnostics.Trace.WriteLine()
-* The p() function (short for "print") aliases to System.Diagnostics.Trace.Write()
-* ConsoleTraceListener attached by default, and configurable by the compiler to include any built-in listener, allowing for, eg file output. 
-  In short, the P()/p() functions can mean whatever you need them to in terms of output, as long as they can be created with a .Net built-in TraceListener constructor. 
-* The R() function (short for "read") reads a string from the Console
-* The R(string prompt) function reads a string from the Console, with the included prompt.
-* The RI() function reads an integer from the Console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
-* The RI(string prompt) function reads an integer from the Console, with the included prompt. If the input is not a valid integer it will re-prompt until a valid integer is received (potentially forever).
-* The RI(string prompt, int MaxTries) function reads an integer from the Console, with the included prompt. If the input is not a valid integer, it will re-prompt up to MaxTries times, after which an exception is thrown.
-* The RD() function reads a Double from the Console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
-* The RD(string prompt) function reads a double from the Console, with the included prompt. If the input is not a valid double it will re-prompt until a valid double is received (potentially forever).
-* The RD(string prompt, int MaxTries) function reads a double from the Console, with the included prompt. If the input is not a valid double it will re-prompt up to MaxTries times, after which an exception is thrown.
-* The RT() function reads a DateTime from the Console. Is not necessarily implemented using DateTime.Parse(), but must follow the documentation for the default DateTime.Parse() function. Right now, this means using the conventions of the current culture.
-* The RT(string prompt) function reads a DateTime from the Console, with the included prompt. If the input is not a valid DateTime, it will re-prompt until a valid DateTime value is received (potentially forever). The same parsing rules as the base RT() function apply.
-* The RT(string prompt, int MaxTries) function reads a DateTime from the Console, with the included prompt. If the input is not a valid DateTime, it will re-prompt up to MaxTries times, after which an exception is thrown. The same parsing rules as the base RT() function apply.
-* `S` is a reserved keyword, aliased to System.String.
-* `I` is a reserved keyword, aliased to System.Int32.
-* `U` is a reserved keyword, aliased to System.UInt32.
-* `D` is a reserved keyword, aliased to System.Double.
-* `T` is a reserved keyword, aliased to System.DateTime.
-* `O` is a reserved keyword, aliased to System.Object.
+* The `P()` function (short for "Print") aliases to `System.Diagnostics.Trace.WriteLine()`
+* The `p()` function (short for "print") aliases to `System.Diagnostics.Trace.Write()`
+* ConsoleTraceListener attached by default, and configurable by the compiler to include any built-in listener, allowing eg file output. 
+  In short, the `P()`/`p()` functions can mean whatever you need them to in terms of output, as long as they can be created with a .Net built-in TraceListener constructor. 
+* The `R()` function (short for "read") reads a string from the console
+* The `R(string prompt)` function reads a string from the console, with the included prompt.
+* The `RI()` function reads an integer from the console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
+* The `RI(string prompt)` function reads an integer from the console, with the included prompt. If the input is not a valid integer it will re-prompt until a valid integer is received (potentially forever).
+* The `RI(string prompt, int MaxTries)` function reads an integer from the Console, with the included prompt. If the input is not a valid integer, it will re-prompt up to `MaxTries` times, after which an exception is thrown.
+* The `RD()` function reads a couble from the console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
+* The `RD(string prompt)` function reads a double from the console, with the included prompt. If the input is not a valid double it will re-prompt until a valid double is received (potentially forever).
+* The `RD(string prompt, int MaxTries)` function reads a double from the console, with the included prompt. If the input is not a valid double it will re-prompt up to `MaxTries` times, after which an exception is thrown.
+* The `RT()` function reads a datetime value from the console. Is not necessarily implemented using `DateTime.Parse()`, but must follow the documentation for the default `DateTime.Parse()` function. Right now, this means using the "conventions of the current culture".
+* The `RT(string prompt)` function reads a datetime value from the console, with the included prompt. If the input is not a valid datetime, it will re-prompt until a valid datetime value is received (potentially forever). The same parsing rules as the base `RT()` function apply.
+* The `RT(string prompt, int MaxTries)` function reads a datetime value from the console, with the included prompt. If the input is not a valid datetime, it will re-prompt up to `MaxTries` times, after which an exception is thrown. The same parsing rules as the base `RT()` function apply.
+* `S` is an alias for `System.String`.
+* `I` is an alias for `System.Int32`.
+* `U` is an alias for `System.UInt32`.
+* `D` is an alias for `System.Double`.
+* `T` is an alias for `System.DateTime`.
+* `O` is an alias for `System.Object`.
 * `System.String.R()` is an alias for `System.String.Replace()`
 * `System.String.S()` is an alias for `System.String.Substring()`
 * `System.String.I()` is an alias for `System.String.IndexOf()`
