@@ -63,6 +63,8 @@ public static class SSUtil
 
     //TODO: other Replace() overloads
     public static S R(this S s, S oldValue, S newValue ) { return s.Replace(oldValue, newValue); }
+    
+    public static S Pad(this S s, I length) { if (length >= 0) return s.PadLeft(length); else return s.PadRight(length*-1);}
 
     public static S S(this S s, I startIndex) { return s.Substring(startIndex); }
     public static S S(this S s, I startIndex, I length) { return s.Substring(startIndex, length); }
