@@ -34,6 +34,7 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 * `System.String.l()` is an alias for `System.String.ToLower()`
 * `System.String.U()` is an alias for `System.String.ToUpper()`
 * `System.String.T()` is an alias for `System.String.Trim()`
+* `System.String.Pad(int length)` is an alternative for `System.String.PadLeft()` and `System.String.PadRight()`. Positive `lenght` values pad to the left. Negative `length` values pad to the right.
 * `System.String.L()` replaces `System.String.Length`
 * `IP()` replaces `System.Int32.Parse()`
 * `DP()` replaces `System.Double.Parse()`
