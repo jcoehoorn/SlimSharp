@@ -16,7 +16,7 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 * The `RI()` function reads an integer from the console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
 * The `RI(string prompt)` function reads an integer from the console, with the included prompt. If the input is not a valid integer it will re-prompt until a valid integer is received (potentially forever).
 * The `RI(string prompt, int MaxTries)` function reads an integer from the Console, with the included prompt. If the input is not a valid integer, it will re-prompt up to `MaxTries` times, after which an exception is thrown.
-* The `RD()` function reads a couble from the console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
+* The `RD()` function reads a double from the console. Invalid input will throw an exception, but most code golf problems assume perfect typists.
 * The `RD(string prompt)` function reads a double from the console, with the included prompt. If the input is not a valid double it will re-prompt until a valid double is received (potentially forever).
 * The `RD(string prompt, int MaxTries)` function reads a double from the console, with the included prompt. If the input is not a valid double it will re-prompt up to `MaxTries` times, after which an exception is thrown.
 * The `RT()` function reads a datetime value from the console. Is not necessarily implemented using `DateTime.Parse()`, but must follow the documentation for the default `DateTime.Parse()` function. Right now, this means using the "conventions of the current culture".
