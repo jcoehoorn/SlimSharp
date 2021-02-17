@@ -57,9 +57,9 @@ More is possible. We could create single-character keywords as aliases for _**al
 
 # Example
 
-[This Stack Exchange Code Golf C# answer](https://codegolf.stackexchange.com/a/115112/58322) currently requires 127 bytes. The below SlimSharp code shortens it to 57 bytes:
+[This Stack Exchange Code Golf C# answer](https://codegolf.stackexchange.com/a/115112/58322) currently requires 127 bytes. The below SlimSharp code shortens it to 56 bytes:
 
 ```
-for(;;)P($"{new T(2019,3,31)-T.Now:ddd\\:hh\\:mm\\:ss}");
+for(;;)P($"{TP("2019-3-31")-T.Now:ddd\\:hh\\:mm\\:ss}");
 ```
 
