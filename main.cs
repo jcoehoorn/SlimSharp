@@ -99,7 +99,7 @@ public static class SSUtil
     
     // TODO: Add handling for additional forms of generic input allowed with Action<T...>.
     public static void F(int start, int end, int delta, Action<int> action) {
-		for (int i = start; i != end; i += delta)
-			action(i);
-	}
+        for (int i = start; i != end; i += delta)
+            action(i);
+    }
 }
