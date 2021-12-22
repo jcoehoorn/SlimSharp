@@ -96,4 +96,13 @@ public static class SSUtil
     public static I IP(S s) { return Int32.Parse(s); }
     public static D DP(S s) { return Double.Parse(s); }
     public static T TP(S s) { return DateTime.Parse(s); }
+    
+    // TODO: Add handling for additional forms of generic input allowed with Action<T...>.
+    public static void F(int start, int end, int delta, Action<int> action) {
+        for (int i = start; i != end; i += delta)
+            action(i);
+    }
+    
+    // TODO: Add handling for additional forms of generic input allowed with Action<T...>.
+    public static void FE<T>(IEnumerable<T> collection, Action<T> action) => collection.ToList().ForEach(f => action(f));
 }
