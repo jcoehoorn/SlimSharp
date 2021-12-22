@@ -102,4 +102,7 @@ public static class SSUtil
         for (int i = start; i != end; i += delta)
             action(i);
     }
+    
+    // TODO: Add handling for additional forms of generic input allowed with Action<T...>.
+    public static void FE<T>(IEnumerable<T> collection, Action<T> action) => collection.ToList().ForEach(f => action(f));
 }
