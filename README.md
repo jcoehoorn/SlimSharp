@@ -44,6 +44,11 @@ SlimSharp starts with C# 9 (including [top-level statements](https://docs.micros
 * `DMx()` replaces `System.Double.MaxValue` (`D.Mx`)
 * `DMn()` replaces `System.Double.MinValue`
 * `L()` as a replacement for the `Length` property on arrays, and the `Count` property on `IList<T>`
+* `s()` as a replacement `System.Object.ToString()`
+* `Int32.s(S f)` is an alias for `Int32.ToString(string format)`
+* `Double.s(S f)` is an alias for `Double.ToString(string format)`
+* `UInt33.s(S f)` is an alias for `UInt32.ToString(string format)`
+* `DateTime.s(S f)` is an alias for `DateTime.ToString(string format)`
 
 # Under consideration
 
