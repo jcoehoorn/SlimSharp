@@ -97,8 +97,8 @@ public static class SSUtil
     
     //ToString() shorteners
     public static S s(this O o) => o.ToString();
-	public static S s(this I i, S f) => i.ToString(f);
-	public static S s(this D d, S f) => d.ToString(f);
-	public static S s(this T t, S f) => t.ToString(f);
-	public static S s(this U u, S f) => u.ToString(f);
+    public static S s(this I i, S f) => i.ToString(f);
+    public static S s(this D d, S f) => d.ToString(f);
+    public static S s(this T t, S f) => t.ToString(f);
+    public static S s(this U u, S f) => u.ToString(f);
 }
